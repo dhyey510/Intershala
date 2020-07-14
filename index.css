@@ -340,19 +340,19 @@ ul li i {
 /* media query */
 @media only screen and (max-width: 620px) {
   body {
-    /* overflow: hidden; */
     overflow-x: hidden;
   }
   html {
     overflow-y: hidden;
-    /* overflow-x: hidden; */
   }
   .post-container {
     margin-top: 15%;
     width: 100%;
+    height: 85vh;
+    /* margin-bottom: 15%; */
   }
   #navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
@@ -361,7 +361,7 @@ ul li i {
     width: 74%;
     height: 34px;
     position: absolute;
-    left: 10%;
+    left: 8%;
     margin-left: 15px;
   }
   .right-nav .home,
@@ -384,13 +384,13 @@ ul li i {
   .chat {
     position: absolute;
     right: 0;
-    padding: 15px;
+    padding-right: 10px;
   }
   footer {
     z-index: 2;
     position: fixed;
     bottom: 0;
-    width: 99vw;
+    width: 100vw;
     height: 50px;
     display: flex;
     justify-content: space-around;
@@ -407,6 +407,9 @@ ul li i {
   }
   footer .home path {
     fill: var(--primary-color);
+  }
+  footer .work svg {
+    padding: 0;
   }
 }
 @media (min-width: 620px) and (max-width: 830px) {
